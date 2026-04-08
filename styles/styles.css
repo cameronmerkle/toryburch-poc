@@ -336,6 +336,7 @@ main > .section:first-of-type {
 @media (width >= 900px) {
   main > .section {
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
   }
 
   /* Full-width blocks span both columns */
@@ -344,6 +345,11 @@ main > .section:first-of-type {
   main > .section > .cards-category-wrapper,
   main > .section > .hero-editorial-wrapper:last-of-type {
     grid-column: 1 / -1;
+  }
+
+  /* Paired banners stretch to fill their row equally */
+  main > .section > .hero-editorial-wrapper:not(:first-child, :last-of-type) {
+    align-self: stretch;
   }
 }
 

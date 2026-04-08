@@ -100,37 +100,49 @@
   color: #fff;
 }
 
-/* Secondary hero banners (not the first one on page) - image fills cell */
+/*
+ * Secondary hero banners (not the first on page)
+ * These sit in a 2-col CSS grid, so they must:
+ *  - match each other's height (stretch via grid)
+ *  - use the image as absolute-positioned cover
+ *  - overlay text at the bottom center
+ */
 .hero-editorial-wrapper:not(:first-child) .hero-editorial {
-  min-height: 0;
+  min-height: 480px;
+  height: 100%;
 }
 
-.hero-editorial-wrapper:not(:first-child) .hero-editorial > div:first-child {
-  position: relative;
-  inset: auto;
-}
-
+/* Keep image absolute for secondary banners so grid controls height */
 .hero-editorial-wrapper:not(:first-child) .hero-editorial > div:last-child {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 24px;
+  padding: 32px 24px;
+  background: linear-gradient(to top, rgb(0 0 0 / 55%) 0%, rgb(0 0 0 / 10%) 60%, transparent 100%);
 }
 
 .hero-editorial-wrapper:not(:first-child) .hero-editorial > div:last-child h2:first-of-type {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.12em;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 40%);
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
 .hero-editorial-wrapper:not(:first-child) .hero-editorial > div:last-child h2:nth-of-type(2) {
-  font-size: 16px;
+  font-size: 18px;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 40%);
 }
 
 .hero-editorial-wrapper:not(:first-child) .hero-editorial a {
-  font-size: 11px;
+  font-size: 12px;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 40%);
+}
+
+/* Last hero (Tory Sport) — wider/shorter banner aspect */
+.hero-editorial-wrapper:last-of-type .hero-editorial {
+  min-height: 340px;
 }
 
 /* No-image fallback */
@@ -187,5 +199,19 @@
   .hero-editorial a {
     font-size: 12px;
     margin: 0 16px;
+  }
+
+  /* Secondary banners in grid — equal height rows */
+  .hero-editorial-wrapper:not(:first-child) {
+    align-self: stretch;
+  }
+
+  .hero-editorial-wrapper:not(:first-child) .hero-editorial {
+    min-height: 500px;
+  }
+
+  /* Tory Sport — shorter on desktop */
+  .hero-editorial-wrapper:last-of-type .hero-editorial {
+    min-height: 400px;
   }
 }
