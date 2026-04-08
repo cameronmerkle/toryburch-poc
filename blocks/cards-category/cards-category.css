@@ -1,0 +1,79 @@
+/* Cards Category - Tory Burch category navigation grid */
+
+.cards-category-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.cards-category > ul {
+  list-style: none;
+  margin: 0;
+  padding: 16px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.cards-category > ul > li {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+.cards-category .cards-category-card-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.cards-category > ul > li img {
+  width: 100%;
+  aspect-ratio: 1 / 1.14;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cards-category > ul > li:hover img {
+  transform: scale(1.03);
+}
+
+.cards-category .cards-category-card-body {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.cards-category .cards-category-card-body p {
+  margin: 0;
+}
+
+.cards-category .cards-category-card-body a {
+  color: var(--text-color);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.cards-category .cards-category-card-body a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (width >= 600px) {
+  .cards-category > ul {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (width >= 900px) {
+  .cards-category-container .cards-category-wrapper {
+    padding: 0 48px;
+  }
+
+  .cards-category .cards-category-card-body a {
+    font-size: 12px;
+  }
+}

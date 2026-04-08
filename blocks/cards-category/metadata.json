@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-category",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-04-08T18:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.toryburch.com",
+    "originPage": "Tory Burch homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "category-navigation",
+    "imagePattern": "large",
+    "structure": "4 cards with image + category link"
+  },
+  "contentPattern": {
+    "structure": "image + category name link per card",
+    "buttonCount": 0,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "category navigation grids",
+      "product category tiles",
+      "visual navigation links"
+    ],
+    "notSuitableFor": [
+      "detailed product cards",
+      "blog article cards with descriptions"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-08T18:10:00.000Z"
+  }
+}

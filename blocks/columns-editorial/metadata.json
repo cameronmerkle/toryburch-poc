@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-editorial",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-04-08T18:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.toryburch.com",
+    "originPage": "Tory Burch homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "editorial-columns",
+    "imagePattern": "large",
+    "structure": "2 columns with image + heading + CTA each"
+  },
+  "contentPattern": {
+    "structure": "2 columns: image + heading + CTA per column",
+    "buttonCount": 2,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "two-panel editorial layouts",
+      "side-by-side category promotions",
+      "split content with images and CTAs"
+    ],
+    "notSuitableFor": [
+      "text-only side-by-side layouts",
+      "comparison tables"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-08T18:10:00.000Z"
+  }
+}

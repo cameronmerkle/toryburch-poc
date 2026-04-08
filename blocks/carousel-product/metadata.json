@@ -1,0 +1,39 @@
+{
+  "variantName": "carousel-product",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-04-08T18:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.toryburch.com",
+    "originPage": "Tory Burch homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "product-carousel",
+    "imagePattern": "large",
+    "structure": "product tiles with images + names"
+  },
+  "contentPattern": {
+    "structure": "image + product name link per slide",
+    "buttonCount": 0,
+    "imageCount": 15
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product showcases",
+      "collection carousels",
+      "featured product sliders"
+    ],
+    "notSuitableFor": [
+      "editorial content carousels",
+      "testimonial sliders"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-08T18:10:00.000Z"
+  }
+}

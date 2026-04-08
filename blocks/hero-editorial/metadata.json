@@ -1,0 +1,40 @@
+{
+  "variantName": "hero-editorial",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-04-08T18:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.toryburch.com",
+    "originPage": "Tory Burch homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "editorial-hero",
+    "imagePattern": "large",
+    "structure": "image + heading + subheading + CTAs"
+  },
+  "contentPattern": {
+    "structure": "image + heading + subheading + 2 CTAs",
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "homepage hero banners",
+      "editorial landing pages",
+      "category promo banners",
+      "full-width image banners with text overlays"
+    ],
+    "notSuitableFor": [
+      "text-only hero sections",
+      "compact hero sections without images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-08T18:10:00.000Z"
+  }
+}

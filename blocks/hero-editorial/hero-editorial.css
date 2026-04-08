@@ -1,0 +1,191 @@
+/* Hero Editorial - Tory Burch full-width banner with image background and text overlay */
+
+.hero-editorial-wrapper {
+  max-width: unset;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero-editorial {
+  position: relative;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Background image layer */
+.hero-editorial > div:first-child {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-editorial > div:first-child p {
+  margin: 0;
+  height: 100%;
+}
+
+.hero-editorial > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content overlay layer */
+.hero-editorial > div:last-child {
+  position: relative;
+  z-index: 1;
+  padding: 40px 24px;
+  max-width: 600px;
+}
+
+.hero-editorial > div:last-child > div {
+  margin: 0;
+}
+
+.hero-editorial h1,
+.hero-editorial h2,
+.hero-editorial h3,
+.hero-editorial h4,
+.hero-editorial h5,
+.hero-editorial h6 {
+  color: #fff;
+  margin: 0 0 2px;
+  text-shadow: 0 1px 6px rgb(0 0 0 / 30%);
+}
+
+/* First heading: small eyebrow text like "A MODERN CLASSIC" */
+/* stylelint-disable-next-line no-descending-specificity */
+.hero-editorial > div:last-child h2:first-of-type {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  margin-bottom: 4px;
+}
+
+/* Large main heading like "CHARLIE" */
+.hero-editorial > div:last-child h2:nth-of-type(2) {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  margin-bottom: 16px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.hero-editorial p {
+  color: #fff;
+  margin: 0;
+}
+
+.hero-editorial a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0 10px;
+  transition: opacity 0.2s ease;
+}
+
+.hero-editorial a:hover {
+  opacity: 0.75;
+  color: #fff;
+}
+
+/* Secondary hero banners (not the first one on page) - image fills cell */
+.hero-editorial-wrapper:not(:first-child) .hero-editorial {
+  min-height: 0;
+}
+
+.hero-editorial-wrapper:not(:first-child) .hero-editorial > div:first-child {
+  position: relative;
+  inset: auto;
+}
+
+.hero-editorial-wrapper:not(:first-child) .hero-editorial > div:last-child {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+}
+
+.hero-editorial-wrapper:not(:first-child) .hero-editorial > div:last-child h2:first-of-type {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.hero-editorial-wrapper:not(:first-child) .hero-editorial > div:last-child h2:nth-of-type(2) {
+  font-size: 16px;
+}
+
+.hero-editorial-wrapper:not(:first-child) .hero-editorial a {
+  font-size: 11px;
+}
+
+/* No-image fallback */
+.hero-editorial.no-image {
+  background-color: var(--light-color);
+  min-height: 180px;
+}
+
+/* stylelint-disable no-descending-specificity */
+.hero-editorial.no-image h1,
+.hero-editorial.no-image h2,
+.hero-editorial.no-image h3,
+.hero-editorial.no-image p,
+.hero-editorial.no-image a {
+  color: var(--text-color);
+  text-shadow: none;
+}
+/* stylelint-enable no-descending-specificity */
+
+@media (width >= 600px) {
+  .hero-editorial {
+    min-height: 450px;
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  .hero-editorial > div:last-child h2:first-of-type {
+    font-size: 14px;
+  }
+
+  .hero-editorial > div:last-child h2:nth-of-type(2) {
+    font-size: 56px;
+  }
+}
+
+@media (width >= 900px) {
+  .hero-editorial {
+    min-height: 550px;
+  }
+
+  .hero-editorial > div:last-child {
+    padding: 60px 32px;
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  .hero-editorial > div:last-child h2:first-of-type {
+    font-size: 15px;
+  }
+
+  .hero-editorial > div:last-child h2:nth-of-type(2) {
+    font-size: 72px;
+    margin-bottom: 20px;
+  }
+
+  .hero-editorial a {
+    font-size: 12px;
+    margin: 0 16px;
+  }
+}

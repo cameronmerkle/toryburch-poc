@@ -1,0 +1,178 @@
+/* Carousel Product - Tory Burch horizontal product tile showcase */
+
+.carousel-product-wrapper {
+  max-width: 1200px;
+  padding: 0 24px;
+}
+
+.carousel-product {
+  padding: 24px 0 16px;
+}
+
+/* Slides container */
+.carousel-product .carousel-product-slides-container {
+  position: relative;
+}
+
+.carousel-product .carousel-product-slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-product .carousel-product-slides::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual slide - small product tile */
+.carousel-product .carousel-product-slide {
+  flex: 0 0 calc(50% - 6px);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: auto;
+  text-align: center;
+}
+
+.carousel-product .carousel-product-slide .carousel-product-slide-image {
+  position: relative;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  width: 100%;
+}
+
+.carousel-product .carousel-product-slide .carousel-product-slide-image picture {
+  position: relative;
+  inset: auto;
+}
+
+.carousel-product .carousel-product-slide .carousel-product-slide-image picture > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 351 / 399;
+  object-fit: contain;
+  display: block;
+  mix-blend-mode: multiply;
+  padding: 8px;
+}
+
+/* Product name */
+.carousel-product .carousel-product-slide .carousel-product-slide-content {
+  z-index: auto;
+  margin: 6px 0 0;
+  padding: 0 4px;
+  color: var(--text-color);
+  background-color: transparent;
+  position: relative;
+  width: auto;
+}
+
+.carousel-product .carousel-product-slide .carousel-product-slide-content p {
+  margin: 0;
+}
+
+.carousel-product .carousel-product-slide .carousel-product-slide-content a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  line-height: 1.3;
+}
+
+.carousel-product .carousel-product-slide .carousel-product-slide-content a:hover {
+  text-decoration: underline;
+}
+
+/* Slide indicators - small dots */
+.carousel-product .carousel-product-slide-indicators {
+  display: none;
+}
+
+/* Navigation arrows */
+.carousel-product .carousel-product-navigation-buttons {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  left: -16px;
+  right: -16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.carousel-product .carousel-product-navigation-buttons button {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  padding: 0;
+  background-color: #fff;
+  transition: background-color 0.2s;
+  pointer-events: all;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+}
+
+.carousel-product .carousel-product-navigation-buttons button:hover,
+.carousel-product .carousel-product-navigation-buttons button:focus-visible {
+  background-color: var(--light-color);
+}
+
+.carousel-product .carousel-product-navigation-buttons button::after {
+  display: block;
+  content: '';
+  border: 1.5px solid #333;
+  border-bottom: 0;
+  border-left: 0;
+  height: 7px;
+  width: 7px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 1px);
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.carousel-product .carousel-product-navigation-buttons button.slide-next::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+  left: calc(50% - 1px);
+}
+
+@media (width >= 600px) {
+  .carousel-product .carousel-product-slide {
+    flex: 0 0 calc(33.333% - 8px);
+  }
+}
+
+@media (width >= 900px) {
+  .carousel-product-wrapper {
+    padding: 0 48px;
+  }
+
+  .carousel-product .carousel-product-slide {
+    flex: 0 0 calc(20% - 10px);
+  }
+
+  .carousel-product .carousel-product-slide .carousel-product-slide-content a {
+    font-size: 11px;
+  }
+
+  .carousel-product .carousel-product-navigation-buttons {
+    left: -20px;
+    right: -20px;
+  }
+}
