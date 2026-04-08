@@ -69,7 +69,7 @@
 }
 
 @media (width >= 900px) {
-  .cards-category-container .cards-category-wrapper {
+  .cards-category-wrapper {
     padding: 0 48px;
   }
 

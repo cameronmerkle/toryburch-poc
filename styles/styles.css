@@ -340,16 +340,11 @@ main > .section:first-of-type {
   }
 
   /* Full-width blocks span both columns */
-  main > .section > .hero-editorial-wrapper:first-child,
+  main > .section > .hero-editorial-wrapper,
   main > .section > .carousel-product-wrapper,
   main > .section > .cards-category-wrapper,
-  main > .section > .hero-editorial-wrapper:last-of-type {
+  main > .section > .columns-editorial-wrapper {
     grid-column: 1 / -1;
-  }
-
-  /* Paired banners stretch to fill their row equally */
-  main > .section > .hero-editorial-wrapper:not(:first-child, :last-of-type) {
-    align-self: stretch;
   }
 }
 
