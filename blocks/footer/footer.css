@@ -1,20 +1,117 @@
+/* Footer - Tory Burch style */
 footer {
-  background-color: var(--light-color);
+  background-color: var(--background-color);
   font-size: var(--body-font-size-xs);
+  border-top: 1px solid #e5e5e5;
 }
 
 footer .footer > div {
   margin: auto;
   max-width: 1200px;
-  padding: 40px 24px 24px;
 }
 
 footer .footer p {
   margin: 0;
 }
 
+/* Foundation section (first section) */
+footer .footer .section:first-child {
+  text-align: center;
+  padding: 40px 24px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+footer .footer .section:first-child img {
+  max-width: 80px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+footer .footer .section:first-child p {
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+footer .footer .section:first-child a {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Link columns (second section) */
+footer .footer .section:nth-child(2) {
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+footer .footer .section:nth-child(2) strong {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+
+footer .footer .section:nth-child(2) ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer .section:nth-child(2) li {
+  margin-bottom: 8px;
+}
+
+footer .footer .section:nth-child(2) a {
+  font-size: 12px;
+  color: #333;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+footer .footer .section:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+
+/* Legal section (last section) */
+footer .footer .section:last-child {
+  padding: 16px 24px;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+footer .footer .section:last-child p {
+  font-size: 10px;
+  color: #999;
+  letter-spacing: 0.02em;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer .section:last-child a {
+  font-size: 10px;
+  color: #999;
+  text-decoration: none;
+}
+
+footer .footer .section:last-child a:hover {
+  text-decoration: underline;
+}
+
 @media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+  footer .footer .section:nth-child(2) {
+    padding: 40px 48px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  footer .footer .section:last-child {
+    padding: 16px 48px;
   }
 }
