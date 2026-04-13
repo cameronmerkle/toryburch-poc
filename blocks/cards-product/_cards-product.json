@@ -1,0 +1,10 @@
+{
+  "name": "Cards Product",
+  "description": "Product listing cards showing product image, name (linked to product detail page), and price in a responsive grid layout.",
+  "base": "cards",
+  "contentModel": {
+    "columns": 2,
+    "col1": "Product image",
+    "col2": "Product name (as link), price"
+  }
+}

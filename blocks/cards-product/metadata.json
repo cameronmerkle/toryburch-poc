@@ -1,0 +1,12 @@
+{
+  "variantName": "cards-product",
+  "baseName": "cards",
+  "sourceUrl": "https://www.toryburch.com/en-us/handbags/",
+  "visualCharacteristics": {
+    "layout": "4-column grid on desktop, 2-column on mobile",
+    "imageStyle": "Product photography with 3:4 aspect ratio",
+    "textStyle": "Product name in small text, price below",
+    "background": "Light gray (#f5f5f5) image background"
+  },
+  "created": "2026-04-13"
+}

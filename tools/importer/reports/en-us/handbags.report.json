@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.toryburch.com/en-us/handbags/",
+  "path": "en-us/handbags",
+  "timestamp": "2026-04-13T17:00:40.242Z",
+  "title": "Designer Bags | Handbags & Purses for Women | Tory Burch",
+  "template": "category-page",
+  "blocks": [
+    "cards-product",
+    "cards-product",
+    "cards-product",
+    "cards-product",
+    "cards-product"
+  ]
+}

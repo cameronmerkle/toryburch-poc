@@ -2,24 +2,34 @@
   "templates": [
     {
       "name": "homepage",
-      "urls": ["https://www.toryburch.com"],
+      "urls": [
+        "https://www.toryburch.com"
+      ],
       "description": "Tory Burch homepage with hero banners, featured collections, and promotional content",
       "blocks": [
         {
           "name": "hero-editorial",
-          "instances": ["#main-content .xp-fragment-kFe"]
+          "instances": [
+            "#main-content .xp-fragment-kFe"
+          ]
         },
         {
           "name": "carousel-product",
-          "instances": [".rec-carousel-xiN"]
+          "instances": [
+            ".rec-carousel-xiN"
+          ]
         },
         {
           "name": "columns-editorial",
-          "instances": ["#main-content > div > .r-grid-SmN > .r-grid__col--m--6-vJX:has(.banner-AtC)"]
+          "instances": [
+            "#main-content > div > .r-grid-SmN > .r-grid__col--m--6-vJX:has(.banner-AtC)"
+          ]
         },
         {
           "name": "cards-category",
-          "instances": ["#main-content .r-grid__col--l--3-TLX"]
+          "instances": [
+            "#main-content .r-grid__col--l--3-TLX"
+          ]
         }
       ],
       "sections": [
@@ -28,7 +38,9 @@
           "name": "Hero Banner",
           "selector": "#main-content > div > .r-grid-SmN > .r-grid__col-N9o:nth-child(2)",
           "style": null,
-          "blocks": ["hero-editorial"],
+          "blocks": [
+            "hero-editorial"
+          ],
           "defaultContent": []
         },
         {
@@ -36,7 +48,9 @@
           "name": "Product Carousel",
           "selector": ".rec-carousel-xiN",
           "style": null,
-          "blocks": ["carousel-product"],
+          "blocks": [
+            "carousel-product"
+          ],
           "defaultContent": []
         },
         {
@@ -44,7 +58,9 @@
           "name": "Two-Column Editorial",
           "selector": "#main-content > div > .r-grid-SmN > .r-grid__col--m--6-vJX",
           "style": null,
-          "blocks": ["columns-editorial"],
+          "blocks": [
+            "columns-editorial"
+          ],
           "defaultContent": []
         },
         {
@@ -52,7 +68,9 @@
           "name": "Category Grid",
           "selector": "#main-content .r-grid__col--l--3-TLX",
           "style": null,
-          "blocks": ["cards-category"],
+          "blocks": [
+            "cards-category"
+          ],
           "defaultContent": []
         },
         {
@@ -60,7 +78,9 @@
           "name": "Runway Editorial Banner",
           "selector": "#main-content > div > .r-grid-SmN > .r-grid__col-N9o:has(h2)",
           "style": null,
-          "blocks": ["hero-editorial"],
+          "blocks": [
+            "hero-editorial"
+          ],
           "defaultContent": []
         },
         {
@@ -68,7 +88,9 @@
           "name": "Tory Sport Banner",
           "selector": "#main-content > div > .r-grid-SmN > .r-grid__col-N9o:last-of-type:has(h2)",
           "style": null,
-          "blocks": ["hero-editorial"],
+          "blocks": [
+            "hero-editorial"
+          ],
           "defaultContent": []
         },
         {
@@ -77,7 +99,9 @@
           "selector": "#layout-footer",
           "style": "dark",
           "blocks": [],
-          "defaultContent": ["#layout-footer .footer-OEo"]
+          "defaultContent": [
+            "#layout-footer .footer-OEo"
+          ]
         }
       ]
     },
@@ -89,8 +113,91 @@
         "https://www.toryburch.com/en-us/clothing/view-all/",
         "https://www.toryburch.com/en-us/accessories/view-all/"
       ],
-      "description": "Category listing page with hero banner, product grid, and filters",
-      "blocks": []
+      "description": "Category listing page with page title, product category sections with product grids, and footer",
+      "blocks": [
+        {
+          "name": "cards-product",
+          "instances": [
+            ".view-more-d8i:nth-of-type(1) .product-grid-X6o",
+            ".view-more-d8i:nth-of-type(2) .product-grid-X6o",
+            ".view-more-d8i:nth-of-type(3) .product-grid-X6o",
+            ".view-more-d8i:nth-of-type(4) .product-grid-X6o",
+            ".view-more-d8i:nth-of-type(5) .product-grid-X6o"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Page Title",
+          "selector": "h1.title__text-z_k",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "h1.title__text-z_k"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Totes",
+          "selector": ".view-more-d8i:nth-of-type(1)",
+          "style": null,
+          "blocks": [
+            "cards-product"
+          ],
+          "defaultContent": [
+            ".view-more__title-iXJ"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Crossbody Bags",
+          "selector": ".view-more-d8i:nth-of-type(2)",
+          "style": null,
+          "blocks": [
+            "cards-product"
+          ],
+          "defaultContent": [
+            ".view-more__title-iXJ"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "Shoulder Bags",
+          "selector": ".view-more-d8i:nth-of-type(3)",
+          "style": null,
+          "blocks": [
+            "cards-product"
+          ],
+          "defaultContent": [
+            ".view-more__title-iXJ"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Bucket Bags",
+          "selector": ".view-more-d8i:nth-of-type(4)",
+          "style": null,
+          "blocks": [
+            "cards-product"
+          ],
+          "defaultContent": [
+            ".view-more__title-iXJ"
+          ]
+        },
+        {
+          "id": "section-6",
+          "name": "Mini Bags & Chain Wallets",
+          "selector": ".view-more-d8i:nth-of-type(5)",
+          "style": null,
+          "blocks": [
+            "cards-product"
+          ],
+          "defaultContent": [
+            ".view-more__title-iXJ"
+          ]
+        }
+      ]
     }
   ]
 }
