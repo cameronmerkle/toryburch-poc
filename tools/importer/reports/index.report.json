@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.toryburch.com",
+  "path": "index",
+  "timestamp": "2026-04-08T18:23:11.474Z",
+  "title": "Women’s Clothing, Dresses, Designer Shoes, Handbags, Accessories | Tory Burch",
+  "template": "homepage",
+  "blocks": [
+    "hero-editorial",
+    "hero-editorial",
+    "hero-editorial",
+    "hero-editorial",
+    "hero-editorial",
+    "carousel-product"
+  ]
+}
