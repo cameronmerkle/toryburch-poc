@@ -3,7 +3,8 @@
 .cards-product-wrapper {
   max-width: var(--content-max-width, 1440px);
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0;
+  width: 100%;
 }
 
 .cards-product > ul {
@@ -39,16 +40,17 @@
 }
 
 .cards-product .cards-product-card-body {
-  margin: 10px 0 0;
+  margin: 8px 0 0;
   padding: 0;
 }
 
 .cards-product .cards-product-card-body p {
   margin: 0 0 2px;
   font-size: var(--body-font-size-xs, 12px);
+  font-weight: 400;
   letter-spacing: var(--body-letter-spacing, 0.02em);
   color: var(--text-color, #000);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .cards-product .cards-product-card-body a {
@@ -57,7 +59,7 @@
   font-weight: 400;
   letter-spacing: var(--body-letter-spacing, 0.02em);
   text-decoration: none;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .cards-product .cards-product-card-body a:hover {
@@ -67,10 +69,6 @@
 }
 
 @media (width >= 600px) {
-  .cards-product-wrapper {
-    padding: 0 24px;
-  }
-
   .cards-product > ul {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -78,10 +76,6 @@
 }
 
 @media (width >= 900px) {
-  .cards-product-wrapper {
-    padding: 0 48px;
-  }
-
   .cards-product > ul {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;

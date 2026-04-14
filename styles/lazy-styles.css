@@ -1,1 +1,84 @@
 /* add global styles that can be loaded post LCP here */
+
+/* Category page layout — title section + product sections */
+main > .section.cards-product-container {
+  padding: 0 16px;
+}
+
+/* Category page title — centered H1 */
+main > .section:has(+ .section.cards-product-container) {
+  text-align: center;
+  padding: 24px 16px 0;
+}
+
+main > .section:has(+ .section.cards-product-container) h1 {
+  font-size: var(--heading-font-size-m);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Category headings — centered above product grids */
+main > .section.cards-product-container > .default-content-wrapper {
+  text-align: center;
+  padding: 24px 0 12px;
+}
+
+main > .section.cards-product-container > .default-content-wrapper h2 {
+  font-size: var(--heading-font-size-xs);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* First category heading (Totes) — slightly larger */
+main > .section.cards-product-container > .default-content-wrapper:first-child h2 {
+  font-size: var(--heading-font-size-s);
+}
+
+/* Divider between category sections — centered short line */
+main > .section.cards-product-container > .cards-product-wrapper + .default-content-wrapper {
+  margin-top: 32px;
+  padding-top: 32px;
+  position: relative;
+}
+
+main > .section.cards-product-container > .cards-product-wrapper + .default-content-wrapper::before {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 0 auto 24px;
+}
+
+@media (width >= 600px) {
+  main > .section.cards-product-container {
+    padding: 0 24px;
+  }
+}
+
+@media (width >= 900px) {
+  main > .section.cards-product-container {
+    padding: 0 48px;
+  }
+
+  main > .section:has(+ .section.cards-product-container) h1 {
+    font-size: var(--heading-font-size-l);
+  }
+
+  main > .section.cards-product-container > .default-content-wrapper {
+    padding: 32px 0 16px;
+  }
+
+  main > .section.cards-product-container > .default-content-wrapper h2 {
+    font-size: var(--heading-font-size-s);
+  }
+
+  main > .section.cards-product-container > .default-content-wrapper:first-child h2 {
+    font-size: var(--heading-font-size-m);
+  }
+
+  main > .section.cards-product-container > .cards-product-wrapper + .default-content-wrapper {
+    margin-top: 48px;
+    padding-top: 40px;
+  }
+}

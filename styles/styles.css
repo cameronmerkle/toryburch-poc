@@ -343,7 +343,13 @@ main > .section:first-of-type {
   main > .section > .hero-editorial-wrapper,
   main > .section > .carousel-product-wrapper,
   main > .section > .cards-category-wrapper,
-  main > .section > .columns-editorial-wrapper {
+  main > .section > .columns-editorial-wrapper,
+  main > .section > .cards-product-wrapper {
+    grid-column: 1 / -1;
+  }
+
+  /* Category page: all children span full width */
+  main > .section.cards-product-container > .default-content-wrapper {
     grid-column: 1 / -1;
   }
 }
